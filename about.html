@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </head>
-<body>
+<body oncontextmenu="return false">
     <section style="padding: 0; width: 100%; z-index: 1;">
     
         <header class="top-bar py-2 px-4 d-flex flex-wrap justify-content-between align-items-center bg-dark text-white">
@@ -71,12 +71,12 @@
     </div>
 </section>
 
-<section class="container my-5">
-    <div class="row align-items-center">
+<section class="container ">
+    <div  oncontextmenu="disableRightClick(event)" class="row align-items-center">
         <div class="col-lg-6">
-            <img src="Images/Nagpur (2).jpg" alt="About Us" class="img-fluid rounded shadow-lg">
+            <img src="Images/Orange-removebg-preview.png" alt="About Us" oncontextmenu="disableRightClick(event)" class="img-fluid shadow-lg radi" >
         </div>
-        <div class="col-lg-6">
+        <div onmousedown='return false;' onselectstart='return false;' class="col-lg-6">
             <h2 class="fw-bold">Who We Are</h2>
             <p class="text-muted">Orange City is dedicated to providing top-notch digital services and resources for the residents of Nagpur. Our mission is to bridge the gap between citizens and government initiatives through seamless online solutions.</p>
             <h4 class="fw-bold mt-4">Our Vision</h4>
@@ -117,19 +117,19 @@
     <h2 class="fw-bold text-center">Meet Our Team</h2>
     <div class="row text-center mt-4">
         <div class="col-md-4">
-            <img src="team-member1.jpg" alt="Team Member" class="rounded-circle team-img">
-            <h5 class="mt-2">John Doe</h5>
+            <img src="Images/saurabh_jagthap.jpg" alt="Team Member" class="rounded-circle team-img">
+            <h5 class="mt-2">Saurabh Jagthap</h5>
             <p class="text-muted">Founder & CEO</p>
         </div>
         <div class="col-md-4">
-            <img src="team-member2.jpg" alt="Team Member" class="rounded-circle team-img">
-            <h5 class="mt-2">Jane Smith</h5>
-            <p class="text-muted">Head of Operations</p>
+            <img src="Images/abhishek_tijare.jpeg" alt="Team Member" class="rounded-circle team-img">
+            <h5 class="mt-2">Abhishek Tijare</h5>
+            <p class="text-muted">Project Guider</p>
         </div>
         <div class="col-md-4">
             <img src="team-member3.jpg" alt="Team Member" class="rounded-circle team-img">
-            <h5 class="mt-2">Mark Wilson</h5>
-            <p class="text-muted">Lead Developer</p>
+            <h5 class="mt-2">Vishal Mirase</h5>
+            <p class="text-muted">Project Maker</p>
         </div>
     </div>
 </section>
@@ -195,5 +195,34 @@
     </div>
 </footer>
 
+
+
+<script>
+    function disableRightClick(event) {
+      if (event.button == 2) {
+        event.preventDefault();
+        
+        return false;
+      }
+    }
+    
+    document.onkeydown = (e) => {
+    if (e.key == 123) {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.shiftKey && e.key == 'I') {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.shiftKey && e.key == 'C') {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.shiftKey && e.key == 'J') {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.key == 'U') {
+        e.preventDefault();
+    }
+};
+  </script>
 </body>
 </html>
