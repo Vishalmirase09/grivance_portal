@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </head>
-<body oncontextmenu="return false">
+<body onmousedown='return false;' onselectstart='return false;' oncontextmenu="disableRightClick(event)">
     <section style="padding: 0; width: 100%; z-index: 1;">
     
         <header class="top-bar py-2 px-4 d-flex flex-wrap justify-content-between align-items-center bg-dark text-white">
@@ -33,7 +33,7 @@
         <div class="container-fluid py-2 bg-white text-black border-top border-bottom">
             <div class="row align-items-center justify-content-between">
                 <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-md-start">
-                    <img src="Images/emblem-dark.png" alt="State Emblem of India" height="70px" class="me-3">
+                    <img src="Images/emblem-dark.png" alt="State Emblem of India" height="70px" class="me-3 radi">
                     <div>
                         <strong class="d-block text-center text-md-start">जिल्हा नागपूर</strong>
                         <h4 class="m-0 text-center text-md-start">District Nagpur</h4>
@@ -62,8 +62,6 @@
         </nav>
     </section>
 
-
-
 <section class="about-hero text-white text-center">
     <div class="container">
         <h1 class="fw-bold">🌟 About Orange City</h1>
@@ -72,11 +70,11 @@
 </section>
 
 <section class="container ">
-    <div  oncontextmenu="disableRightClick(event)" class="row align-items-center">
+    <div class="row align-items-center">
         <div class="col-lg-6">
-            <img src="Images/Orange-removebg-preview.png" alt="About Us" oncontextmenu="disableRightClick(event)" class="img-fluid shadow-lg radi" >
+            <img src="Images/Orange-removebg-preview.png" alt="About Us" class="img-fluid shadow-lg radi">
         </div>
-        <div onmousedown='return false;' onselectstart='return false;' class="col-lg-6">
+        <div class="col-lg-6">
             <h2 class="fw-bold">Who We Are</h2>
             <p class="text-muted">Orange City is dedicated to providing top-notch digital services and resources for the residents of Nagpur. Our mission is to bridge the gap between citizens and government initiatives through seamless online solutions.</p>
             <h4 class="fw-bold mt-4">Our Vision</h4>
@@ -133,12 +131,6 @@
         </div>
     </div>
 </section>
-
-
-
-
-
-
 
 <footer class="footer bg-dark text-white py-4" style="background-image: url(Images/d22f84e2-81c6-4bbb-8d2f-a91cb5cab2d0.jpg)">
     <div class="container">
@@ -198,15 +190,14 @@
 
 
 <script>
-    function disableRightClick(event) {
+function disableRightClick(event) {
       if (event.button == 2) {
         event.preventDefault();
-        
         return false;
       }
     }
-    
-    document.onkeydown = (e) => {
+
+document.onkeydown = (e) => {
     if (e.key == 123) {
         e.preventDefault();
     }
@@ -223,6 +214,8 @@
         e.preventDefault();
     }
 };
-  </script>
+
+</script>
+
 </body>
 </html>
