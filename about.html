@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orange City</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+    <link href='//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
 </head>
 <body onmousedown='return false;' onselectstart='return false;' oncontextmenu="disableRightClick(event)">
-    <section style="padding: 0; width: 100%; z-index: 1;">
+
+    <header style="padding: 0; width: 100%; z-index: 1;">
     
-        <header class="top-bar py-2 px-4 d-flex flex-wrap justify-content-between align-items-center bg-dark text-white">
+        <div class="top-bar py-2 px-4 d-flex flex-wrap justify-content-between align-items-center bg-dark text-white">
             <div class="text-center text-md-start">
                 <a href="mailto:hello@rsinfotechsys.com" class="text-white rem">📧 Email: rightserveinfotechsystems@gmail.com</a>
                 <span class="mx-2 d-none d-md-inline">|</span>
@@ -28,29 +30,63 @@
                     <option value="hindi">Hindi</option>
                 </select>
             </div>
-        </header>
+        </div>
     
         <div class="container-fluid py-2 bg-white text-black border-top border-bottom">
             <div class="row align-items-center justify-content-between">
                 <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-md-start">
-                    <img src="Images/emblem-dark.png" alt="State Emblem of India" height="70px" class="me-3 radi">
+                    <img src="Images/emblem-dark.png" alt="State Emblem of India" height="70px" class="me-3">
                     <div>
                         <strong class="d-block text-center text-md-start">जिल्हा नागपूर</strong>
                         <h4 class="m-0 text-center text-md-start">District Nagpur</h4>
                     </div>
                 </div>
                 <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
-                    <button class="btn btn-danger px-3">Raise Complaint - Online</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#complaintModal">
+                        Raise Complaint Online
+                    </button>
                 </div>
             </div>
         </div>
+
+        <div class="modal fade" id="complaintModal" tabindex="-1" aria-labelledby="complaintModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="complaintModalLabel">Raise a Complaint</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Your Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email Address</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                      <label for="phone" class="form-label">Phone Number</label>
+                      <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="mb-3">
+                      <label for="complaint" class="form-label">Complaint Details</label>
+                      <textarea class="form-control" id="complaint" rows="4" placeholder="Describe your issue"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Submit Complaint</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
     
-        <nav class="navbar navbar-expand-md bg-secondary text-white">
+        <nav class="navbar navbar-expand-md bg-dark text-white">
             <div class="container">
                 <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     ☰
                 </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-md-start" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link text-white px-3" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link text-white px-3" href="about.html">About</a></li>
@@ -60,162 +96,169 @@
                 </div>
             </div>
         </nav>
+    </header>
+
+    <section class="about-hero text-white text-center">
+        <div class="container">
+            <h1 class="fw-bold">🌟 About Orange City</h1>
+            <p class="lead">Empowering Nagpur with Digital Innovation and Smart Services</p>
+        </div>
     </section>
 
-<section class="about-hero text-white text-center">
-    <div class="container">
-        <h1 class="fw-bold">🌟 About Orange City</h1>
-        <p class="lead">Empowering Nagpur with Digital Innovation and Smart Services</p>
-    </div>
-</section>
-
-<section class="container ">
-    <div class="row align-items-center">
-        <div class="col-lg-6">
-            <img src="Images/Orange-removebg-preview.png" alt="About Us" class="img-fluid shadow-lg radi">
-        </div>
-        <div class="col-lg-6">
-            <h2 class="fw-bold">Who We Are</h2>
-            <p class="text-muted">Orange City is dedicated to providing top-notch digital services and resources for the residents of Nagpur. Our mission is to bridge the gap between citizens and government initiatives through seamless online solutions.</p>
-            <h4 class="fw-bold mt-4">Our Vision</h4>
-            <p class="text-muted">To make Nagpur a leading smart city by leveraging technology and innovation.</p>
-            <h4 class="fw-bold mt-4">Our Mission</h4>
-            <p class="text-muted">Providing transparent, efficient, and accessible digital services to all citizens.</p>
-        </div>
-    </div>
-</section>
-
-<section class="bg-light py-5">
-    <div class="container text-center">
-        <h2 class="fw-bold">Why Choose Us?</h2>
-        <div class="row mt-4">
-            <div class="col-md-4">
-                <div class="card p-4 shadow-sm">
-                    <h4>🚀 Innovation</h4>
-                    <p class="text-muted">We bring the latest technology to enhance city life.</p>
-                </div>
+    <section class="container ">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <img src="Images/Orange-removebg-preview.png" alt="About Us" class="img-fluid shadow-lg radi">
             </div>
-            <div class="col-md-4">
-                <div class="card p-4 shadow-sm">
-                    <h4>✅ Reliability</h4>
-                    <p class="text-muted">Trusted by thousands of citizens for seamless services.</p>
-                </div>
+            <div class="col-lg-6">
+                <h2 class="fw-bold">Who We Are</h2>
+                <p class="text-muted">Orange City is dedicated to providing top-notch digital services and resources for the residents of Nagpur. Our mission is to bridge the gap between citizens and government initiatives through seamless online solutions.</p>
+                <h4 class="fw-bold mt-4">Our Vision</h4>
+                <p class="text-muted">To make Nagpur a leading smart city by leveraging technology and innovation.</p>
+                <h4 class="fw-bold mt-4">Our Mission</h4>
+                <p class="text-muted">Providing transparent, efficient, and accessible digital services to all citizens.</p>
             </div>
-            <div class="col-md-4">
-                <div class="card p-4 shadow-sm">
-                    <h4>💡 Smart Solutions</h4>
-                    <p class="text-muted">Bridging the gap between citizens and digital governance.</p>
+        </div>
+    </section>
+
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold">Why Choose Us?</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card p-4 shadow-sm">
+                        <h4>🚀 Innovation</h4>
+                        <p class="text-muted">We bring the latest technology to enhance city life.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 shadow-sm">
+                        <h4>✅ Reliability</h4>
+                        <p class="text-muted">Trusted by thousands of citizens for seamless services.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 shadow-sm">
+                        <h4>💡 Smart Solutions</h4>
+                        <p class="text-muted">Bridging the gap between citizens and digital governance.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="container my-5">
-    <h2 class="fw-bold text-center">Meet Our Team</h2>
-    <div class="row text-center mt-4">
-        <div class="col-md-4">
-            <img src="Images/saurabh_jagthap.jpg" alt="Team Member" class="rounded-circle team-img">
-            <h5 class="mt-2">Saurabh Jagthap</h5>
-            <p class="text-muted">Founder & CEO</p>
-        </div>
-        <div class="col-md-4">
-            <img src="Images/abhishek_tijare.jpeg" alt="Team Member" class="rounded-circle team-img">
-            <h5 class="mt-2">Abhishek Tijare</h5>
-            <p class="text-muted">Project Guider</p>
-        </div>
-        <div class="col-md-4">
-            <img src="team-member3.jpg" alt="Team Member" class="rounded-circle team-img">
-            <h5 class="mt-2">Vishal Mirase</h5>
-            <p class="text-muted">Project Maker</p>
-        </div>
-    </div>
-</section>
-
-<footer class="footer bg-dark text-white py-4" style="background-image: url(Images/d22f84e2-81c6-4bbb-8d2f-a91cb5cab2d0.jpg)">
-    <div class="container">
-        <div class="row">
-            
+    <section class="container my-5">
+        <h2 class="fw-bold text-center">Meet Our Team</h2>
+        <div class="row text-center mt-4">
             <div class="col-md-4">
-                <h4 class="fw-bold">Contact Us</h4>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="mailto:hello@rsinfotechsys.com" class="footer-link">📧 rightserveinfotechsystems@gmail.com</a>
-                    </li>
-                    <li>
-                        <a href="tel:+91 7972192831" class="footer-link">📞 +91 7972192831</a>
-                    </li>
-                </ul>
+                <img src="Images/saurabh_jagthap.jpg" alt="Team Member" class="rounded-circle team-img">
+                <h5 class="mt-2">Saurabh Jagthap</h5>
+                <p class="text-muted">Founder & CEO</p>
             </div>
-
-            <div class="col-md-2">
-                <h4 class="fw-bold">Quick Links</h4>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="footer-link">About Us</a></li>
-                    <li><a href="#" class="footer-link">Terms & Conditions</a></li>
-                    <li><a href="#" class="footer-link">Privacy Policy</a></li>
-                </ul>
+            <div class="col-md-4">
+                <img src="Images/abhishek_tijare.jpeg" alt="Team Member" class="rounded-circle team-img">
+                <h5 class="mt-2">Abhishek Tijare</h5>
+                <p class="text-muted">Project Guider</p>
             </div>
-
-            <div class="col-md-3">
-                <h4 class="fw-bold">Important Links</h4>
-                <ul class="list-unstyled">
-                    <li><a href="https://www.india.gov.in/" target="_blank" class="footer-link">🌍 National Portal of India</a></li>
-                    <li><a href="https://www.maharashtra.gov.in/1125/Home" target="_blank" class="footer-link">🏛  Government of Maharashtra</a></li>
-                    <li><a href="https://www.nagpurzp.com/" target="_blank" class="footer-link">🏢 Zilha Parishad Nagpur</a></li>
-                </ul>
-            </div>
-
-            <div class="col-md-3 text-md-end">
-                <h4 class="fw-bold">Address</h4>
-                <p class="mt-3">📍 10, Saurabh Nagar-2, Besa Rd, near Hanuman Mandir, Saubhagya Nagar, Ghogali, Nagpur, Maharashtra 440034</p>
+            <div class="col-md-4">
+                <img src="team-member3.jpg" alt="Team Member" class="rounded-circle team-img">
+                <h5 class="mt-2">Vishal Mirase</h5>
+                <p class="text-muted">Project Maker</p>
             </div>
         </div>
+    </section>
 
-        <hr class="footer-divider">
+    <footer class="nb-footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="footer-info-single">
+                    <h2 class="title text-uppercase">Government of India</h2>
+                    <img src="Images/emblem-dark.png" class="img-fluid mb-2" alt="Government Logo" style="max-width: 80px;">
+                    <p>Ensuring transparency, digital governance, and accessibility for every citizen.</p>
+                    </div>
+                </div>
 
-        <div class="text-center">
-            <h4 class="fw-bold">Follow Us</h4>
-            <div class="social-icons">
-                <a href="#"><img src="Images/icons8-facebook-48.png" alt="Facebook"></a>
-                <a href="#"><img src="Images/icons8-instagram-48.png" alt="Instagram"></a>
-                <a href="#"><img src="Images/icons8-twitter-48.png" alt="Twitter"></a>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="footer-info-single">
+                        <h2 class="title text-uppercase">Quick Links</h2>
+                        <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-light"><i class="fa fa-angle-double-right me-2"></i> Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-light"><i class="fa fa-angle-double-right me-2"></i> About Us</a></li>
+                        <li class="mb-2"><a href="events.html" class="text-light"><i class="fa fa-angle-double-right me-2"></i> Events</a></li>
+                        <li><a href="contact.html" class="text-light"><i class="fa fa-angle-double-right me-2"></i> Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="footer-info-single">
+                        <h2 class="title text-uppercase">Security & Privacy</h2>
+                        <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light"><i class="fa fa-angle-double-right me-2"></i> Terms of Use</a></li>
+                        <li class="mb-2"><a href="#" class="text-light"><i class="fa fa-angle-double-right me-2"></i> Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text-light"><i class="fa fa-angle-double-right me-2"></i> Return/Refund Policy</a></li>
+                        <li><a href="#" class="text-light"><i class="fa fa-angle-double-right me-2"></i> Govt. Tenders</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="footer-info-single">
+                        <h2 class="title text-uppercase">Contact Us</h2>
+                        <p>Email: <a href="mailto:hello@rsinfotechsys.com" class="text-light">rsinfotech@gmail.com</a></p>
+                        <p>Helpline: <a href="tel:+91 7972192831" class="text-light">7972192831</a></p>
+                        <div class="social-media mt-3">
+                            <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/RightServe" class="btn btn-outline-light btn-sm rounded-circle"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/right_serve_infotech_system/" class="btn btn-outline-light btn-sm rounded-circle"><i class="fa fa-instagram"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/company/rsinfotechsys/posts/?feedView=all" class="btn btn-outline-light btn-sm rounded-circle"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+        <hr class="border-light">
+
+        <section class="copyright text-center">
+            <p class="mb-0">&copy; RIGHT SERVE INFOTECH SYSTEMS PVT. LTD. 2025. All Rights Reserved.</p>
+        </section>
         </div>
+    </footer>
+  
+    <script>
+        function disableRightClick(event) {
+                if (event.button == 2) {
+                    event.preventDefault();
+                    return false;
+                }
+            }
 
-        <p class="text-center mt-4">&copy; 2025 RIGHT SERVE INFOTECH SYSTEMS PVT. LTD. All Rights Reserved.</p>
-    </div>
-</footer>
-
-
-
-<script>
-function disableRightClick(event) {
-      if (event.button == 2) {
-        event.preventDefault();
-        return false;
-      }
-    }
-
-document.onkeydown = (e) => {
-    if (e.key == 123) {
-        e.preventDefault();
-    }
-    if (e.ctrlKey && e.shiftKey && e.key == 'I') {
-        e.preventDefault();
-    }
-    if (e.ctrlKey && e.shiftKey && e.key == 'C') {
-        e.preventDefault();
-    }
-    if (e.ctrlKey && e.shiftKey && e.key == 'J') {
-        e.preventDefault();
-    }
-    if (e.ctrlKey && e.key == 'U') {
-        e.preventDefault();
-    }
-};
-
-</script>
+        document.onkeydown = (e) => {
+                if (e.key == 123) {
+                    e.preventDefault();
+                }
+                if (e.ctrlKey && e.shiftKey && e.key == 'I') {
+                    e.preventDefault();
+                }
+                if (e.ctrlKey && e.shiftKey && e.key == 'C') {
+                    e.preventDefault();
+                }
+                if (e.ctrlKey && e.shiftKey && e.key == 'J') {
+                    e.preventDefault();
+                }
+                if (e.ctrlKey && e.key == 'U') {
+                    e.preventDefault();
+                }
+            };
+    </script>
 
 </body>
 </html>
