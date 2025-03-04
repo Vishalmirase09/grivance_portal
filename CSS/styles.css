@@ -30,7 +30,6 @@ section {
   height: 100%;
   opacity: .6;
   width: 300px;
-  
 }
 
 .main{
@@ -77,7 +76,6 @@ section {
   font-weight: 700;
   padding: 1px 15px;
 }
-
 
 .fade-in {
   opacity: 0;
@@ -295,7 +293,7 @@ pointer-events: none;
 
 
 .events-hero {
-background: linear-gradient(to right, #ff5733, #c70039);
+background: linear-gradient(to right, #007bff, #6610f2);
 padding: 80px 0;
 }
 
@@ -412,7 +410,7 @@ footer.nb-footer .footer-info-single ul li a {
 }
 
 footer.nb-footer .footer-info-single ul li a i{
-  font-size: 22px;
+  font-size: 20px;
 }
 
 footer.nb-footer .footer-info-single ul li a:hover {
@@ -462,7 +460,7 @@ footer.nb-footer .copyright a {
 }
 
 .btn-outline-light:hover {
-  background: #ffffffd0 !important;
+  background: #f8b6009c !important;
   color: #fff !important;
 }
 
