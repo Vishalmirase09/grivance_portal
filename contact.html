@@ -44,7 +44,7 @@
                 </div>
 
                 <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#complaintModal">
+                    <button type="button" class="same" data-bs-toggle="modal" data-bs-target="#complaintModal">
                         Raise Complaint Online
                     </button>
                 </div>
@@ -76,7 +76,7 @@
                       <label for="complaint" class="form-label">Complaint Details</label>
                       <textarea class="form-control" id="complaint" rows="4" placeholder="Describe your issue"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-success">Submit Complaint</button>
+                    <button type="submit" class="same">Submit Complaint</button>
                   </form>
                 </div>
               </div>
@@ -100,33 +100,44 @@
         </nav>
     </header>
 
-    <section class="contact-section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="contact-form p-5 shadow-lg">
-                        <h2 class="text-center fw-bold mb-4">📩 Get in Touch</h2>
-                        <p class="text-center text-muted">We’d love to hear from you! Fill in the details below, and we’ll get back to you shortly.</p>
-                        <form>
-                            <div class="mb-3 input-group">
-                                <span class="input-group-text bg-primary text-white"><i class="bi bi-person-fill"></i></span>
-                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-                            </div>
-                            <div class="mb-3 input-group">
-                                <span class="input-group-text bg-primary text-white"><i class="bi bi-envelope-fill"></i></span>
-                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
-                            </div>
-                            <div class="mb-3 input-group">
-                                <span class="input-group-text bg-primary text-white"><i class="bi bi-chat-dots-fill"></i></span>
-                                <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary w-75">Send Message 🚀</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section class="contact-section py-5">
+      <div class="container">
+          <div class="row g-4">
+              
+              <div class="col-lg-6 col-md-12">
+                  <div class="contact-form p-4 shadow-lg rounded">
+                      <h2 class="text-center fw-bold mb-4">📩 Get in Touch</h2>
+                      <p class="text-center text-muted">We’d love to hear from you! Fill in the details below, and we’ll get back to you shortly.</p>
+                      <form>
+                          <div class="mb-3 input-group">
+                              <span class="input-group-text bg-primary text-white"><i class="bi bi-person-fill"></i></span>
+                              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                          </div>
+                          <div class="mb-3 input-group">
+                              <span class="input-group-text bg-primary text-white"><i class="bi bi-envelope-fill"></i></span>
+                              <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                          </div>
+                          <div class="mb-3 input-group">
+                              <span class="input-group-text bg-primary text-white"><i class="bi bi-chat-dots-fill"></i></span>
+                              <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-primary w-100">Send Message 🚀</button>
+                      </form>
+                  </div>
+              </div>
+  
+              <div class="col-lg-6 col-md-12">
+                  <div class="contact-map shadow-lg rounded overflow-hidden">
+                      <iframe class="w-100" height="400" style="border:0;" allowfullscreen loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade"
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.0210243982538!2d79.08988357430741!3d21.07182248630001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf5350dc545f%3A0xd55211e531f81f8a!2sRIGHT%20SERVE%20INFOTECH%20SYSTEM%20PRIVATE%20LIMITED!5e0!3m2!1sen!2sin!4v1741245974165!5m2!1sen!2sin">
+                      </iframe>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
 
     <footer class="nb-footer bg-dark text-light py-5">
         <div class="container">

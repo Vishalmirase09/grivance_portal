@@ -111,11 +111,13 @@ max-width: 350px;
 }
 
 .devinfo{
-  background-color: rgba(1, 1, 75, 0.828); 
-  color: white; 
+  background: linear-gradient(to right, #007bffd5, #6710f2b0);
+  /* background-color: rgba(1, 1, 75, 0.828);  */
+  color: rgb(58, 49, 49); 
   padding: 20px;
   width: 50%;
   border-radius: 10px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {
@@ -286,6 +288,11 @@ border: 4px solid #007bff;
 .radi{
 border-radius: 30px ;
 pointer-events: none;
+}
+
+.team-img:hover{
+  border: 5px solid red;
+  transform: scale(1.1,1.1);
 }
 
 
@@ -472,3 +479,25 @@ footer.nb-footer .copyright a {
 .nb-footer a:hover {
   color: #f8b400 !important;
 }
+
+.same {
+  background: linear-gradient(to right, #007bff, #6610f2); /* Blue to Purple */
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 2px solid black;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+
+.same:hover {
+  background: linear-gradient(to right, #0056b3, #4a008e); /* Darker shades */
+  border: 2px solid #ff6a25; /* Orange border */
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
