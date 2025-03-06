@@ -62,19 +62,19 @@
                   <form>
                     <div class="mb-3">
                       <label for="name" class="form-label">Your Name</label>
-                      <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
                     </div>
                     <div class="mb-3">
                       <label for="email" class="form-label">Email Address</label>
-                      <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                      <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
                     </div>
                     <div class="mb-3">
                       <label for="phone" class="form-label">Phone Number</label>
-                      <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
+                      <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" required>
                     </div>
                     <div class="mb-3">
                       <label for="complaint" class="form-label">Complaint Details</label>
-                      <textarea class="form-control" id="complaint" rows="4" placeholder="Describe your issue"></textarea>
+                      <textarea class="form-control" id="complaint" rows="4" placeholder="Describe your issue" required></textarea>
                     </div>
                     <button type="submit" class="same">Submit Complaint</button>
                   </form>
@@ -140,11 +140,8 @@
                             <label for="phoneNumber" class="form-label">Registered Phone Number</label>
                             <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number" required>
                         </div>
+                        <button type="submit" class="same">Track Complaint</button>
                     </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="same" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="same">Track Complaint</button>
                 </div>
             </div>
         </div>
