@@ -392,19 +392,19 @@ background: #ff4757;
 }
 
 .whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  color: white;
-  font-size: 30px;
-  padding: 15px;
-  border-radius: 50%;
-  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-  transition: 0.3s;
+position: fixed;
+bottom: 20px;
+right: 20px;
+background: #25D366;
+color: white;
+font-size: 30px;
+padding: 15px;
+border-radius: 50%;
+box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+transition: 0.3s;
 }
 .whatsapp-float:hover {
-  background: #1EBEA5;
+background: #1EBEA5;
 }
 
 

@@ -1,278 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orange City</title>
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orange City</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
 </head>
+
 <body>
-    
-    <header style="padding: 0; width: 100%; z-index: 1;">
-    
-        <div class="top-bar py-2 px-4 d-flex flex-wrap justify-content-between align-items-center bg-dark text-white">
-            <div class="text-center text-md-start">
-                <i class="fa-solid fa-envelope fa-lg" style="color: #ffffff;"><a href="mailto:hello@rsinfotechsys.com" class="text-white rem"></i> Email: rightserveinfotechsystems@gmail.com</a>
-                <span class="mx-2 d-none d-md-inline">|</span>
-                <i class="fa-solid fa-phone fa-lg" style="color: #fafafa;"><a href="tel:+91 7972192831" class="text-white rem"></i> Phone: 7972192831</a>
-            </div>
 
-            <div class="d-flex align-items-center">
-                <a href="#" class="text-white mx-1 rem">A+</a>
-                <a href="#" class="text-white mx-1 rem">A</a>
-                <a href="#" class="text-white mx-1 rem">A-</a>
-                <select name="lang" id="lang" class="ms-2 form-select form-select-sm">
-                    <option>Select Language</option>
-                    <option value="english">English</option>
-                    <option value="hindi">Hindi</option>
-                </select>
-            </div>
-        </div>
-    
-        <div class="container-fluid py-2 bg-white text-black border-top border-bottom">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-md-start">
-                    <img src="Images/emblem-dark.png" alt="State Emblem of India" height="70px" class="me-3">
-                    <div>
-                        <strong class="d-block text-center text-md-start">जिल्हा नागपूर</strong>
-                        <h4 class="m-0 text-center text-md-start">District Nagpur</h4>
-                    </div>
-                </div>
+  <header style="padding: 0; width: 100%; z-index: 1;">
 
-                <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
-                    <button type="button" class="same" data-bs-toggle="modal" data-bs-target="#complaintModal">
-                        Raise Complaint Online
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="complaintModal" tabindex="-1" aria-labelledby="complaintModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="complaintModalLabel">Raise a Complaint</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <form>
-                    <div class="mb-3">
-                      <label for="name" class="form-label">Your Name</label>
-                      <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                    </div>
-                    <div class="mb-3">
-                      <label for="email" class="form-label">Email Address</label>
-                      <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                    </div>
-                    <div class="mb-3">
-                      <label for="phone" class="form-label">Phone Number</label>
-                      <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
-                    </div>
-                    <div class="mb-3">
-                      <label for="complaint" class="form-label">Complaint Details</label>
-                      <textarea class="form-control" id="complaint" rows="4" placeholder="Describe your issue"></textarea>
-                    </div>
-                    <button type="submit" class="same">Submit Complaint</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-    
-        <nav class="navbar navbar-expand-md bg-dark text-white">
-            <div class="container">
-                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    ☰
-                </button>
-                <div class="collapse navbar-collapse justify-content-md-start" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link text-white px-3" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link text-white px-3" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link text-white px-3" href="events.html">Events</a></li>
-                        <li class="nav-item"><a class="nav-link text-white px-3" href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <section class="contact-section py-5 bg-light">
-      <div class="container">
-          <div class="row g-4">
-              <!-- Contact Form -->
-              <div class="col-lg-6 col-md-12">
-                  <div class="contact-form p-4 shadow-lg bg-white rounded">
-                      <h2 class="text-center fw-bold mb-3">📩 Get in Touch</h2>
-                      <p class="text-center text-muted">We’d love to hear from you! Fill in the details below, and we’ll get back to you shortly.</p>
-                      <form>
-                          <div class="mb-3 input-group">
-                              <span class="input-group-text bg-primary text-white"><i class="bi bi-person-fill"></i></span>
-                              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-                          </div>
-                          <div class="mb-3 input-group">
-                              <span class="input-group-text bg-primary text-white"><i class="bi bi-envelope-fill"></i></span>
-                              <input type="email" class="form-control" id="email" placeholder="Your Email" required>
-                          </div>
-                          <div class="mb-3 input-group">
-                              <span class="input-group-text bg-primary text-white"><i class="bi bi-pencil-fill"></i></span>
-                              <input type="text" class="form-control" id="subject" placeholder="Subject" required>
-                          </div>
-                          <div class="mb-3 input-group">
-                              <span class="input-group-text bg-primary text-white"><i class="bi bi-chat-dots-fill"></i></span>
-                              <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
-                          </div>
-                          <button type="submit" class="btn btn-primary w-100 fw-bold">Send Message 🚀</button>
-                      </form>
-  
-                      <!-- Contact Info -->
-                      <div class="text-center mt-4">
-                          <p class="mb-2"><i class="bi bi-telephone-fill text-primary"></i> <strong>Phone:</strong> +91 98765 43210</p>
-                          <p class="mb-2"><i class="bi bi-envelope-fill text-primary"></i> <strong>Email:</strong> info@rightserve.com</p>
-                          <p class="mb-2"><i class="bi bi-geo-alt-fill text-primary"></i> <strong>Address:</strong> 10, Saurabh Nagar-2, Besa Rd, near Hanuman Mandir, Saubhagya Nagar, Ghogali, Nagpur, Maharashtra 440034</p>
-                          <p class="mb-2"><i class="bi bi-clock-fill text-primary"></i> <strong>Business Hours:</strong> Mon - Fri, 10 AM - 10 PM</p>
-                      </div>
-  
-                      <!-- Social Media -->
-                      <div class="text-center mt-3">
-                          <a href="#" class="text-primary mx-2 fs-4"><i class="bi bi-facebook"></i></a>
-                          <a href="#" class="text-primary mx-2 fs-4"><i class="bi bi-twitter"></i></a>
-                          <a href="#" class="text-primary mx-2 fs-4"><i class="bi bi-instagram"></i></a>
-                          <a href="#" class="text-primary mx-2 fs-4"><i class="bi bi-linkedin"></i></a>
-                          <a href="https://wa.me/919876543210" class="text-success mx-2 fs-4"><i class="bi bi-whatsapp"></i></a>
-                      </div>
-                  </div>
-              </div>
-  
-              <!-- Google Map & FAQ -->
-              <div class="col-lg-6 col-md-12">
-                  <div class="contact-map shadow-lg rounded overflow-hidden mb-4">
-                      <iframe class="w-100 rounded" height="300" style="border:0;" allowfullscreen loading="lazy"
-                          referrerpolicy="no-referrer-when-downgrade"
-                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.0210243982538!2d79.08988357430741!3d21.07182248630001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf5350dc545f%3A0xd55211e531f81f8a!2sRIGHT%20SERVE%20INFOTECH%20SYSTEM%20PRIVATE%20LIMITED!5e0!3m2!1sen!2sin!4v1741245974165!5m2!1sen!2sin">
-                      </iframe>
-                  </div>
-  
-                  <!-- FAQ Section -->
-                  <div class="faq-section p-4 shadow-lg bg-white rounded">
-                      <h4 class="fw-bold text-primary">💡 Frequently Asked Questions</h4>
-                      <div class="accordion" id="faqAccordion">
-                          <div class="accordion-item">
-                              <h2 class="accordion-header" id="faq1">
-                                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#answer1">
-                                      How can I contact support?
-                                  </button>
-                              </h2>
-                              <div id="answer1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                                  <div class="accordion-body">
-                                      You can contact us via email at <strong>support@rightserve.com</strong> or call us at +91 98765 43210.
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="accordion-item">
-                              <h2 class="accordion-header" id="faq2">
-                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer2">
-                                      Where is your office located?
-                                  </button>
-                              </h2>
-                              <div id="answer2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                  <div class="accordion-body">
-                                      Our office is located at <strong>10, Saurabh Nagar-2, Besa Rd, near Hanuman Mandir, Saubhagya Nagar, Ghogali, Nagpur, Maharashtra 440034</strong>.
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="accordion-item">
-                              <h2 class="accordion-header" id="faq3">
-                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer3">
-                                      What are your working hours?
-                                  </button>
-                              </h2>
-                              <div id="answer3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                  <div class="accordion-body">
-                                      Our business hours are <strong>Monday to Saturday, 10 AM - 10 PM</strong>.
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
+    <div class="top-bar py-2 px-4 d-flex flex-wrap justify-content-between align-items-center bg-dark text-white">
+      <div class="text-center text-md-start">
+        <i class="fa-solid fa-envelope fa-lg" style="color: #ffffff;"><a href="mailto:hello@rsinfotechsys.com"
+            class="text-white rem"></i> Email: rightserveinfotechsystems@gmail.com</a>
+        <span class="mx-2 d-none d-md-inline">|</span>
+        <i class="fa-solid fa-phone fa-lg" style="color: #fafafa;"><a href="tel:+91 7972192831"
+            class="text-white rem"></i> Phone: 7972192831</a>
       </div>
-  
-      <!-- WhatsApp Floating Button -->
-      <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">
-          <i class="bi bi-whatsapp"></i>
-      </a>
-  </section>
-  
 
-    <footer class="nb-footer bg-dark text-light py-5">
-        <div class="container">
-          <div class="row text-center text-md-start">
-            
-            <div class="col-md-3 col-sm-6 mb-4">
-              <div class="footer-info-single">
-                <h2 class="title text-uppercase">Government of India</h2>
-                <img src="Images/emblem-dark.png" class="img-fluid mb-2" alt="Government Logo" style="max-width: 80px;">
-                <p>Ensuring transparency, digital governance, and accessibility for every citizen.</p>
+      <div class="d-flex align-items-center">
+        <a href="#" class="text-white mx-1 rem">A+</a>
+        <a href="#" class="text-white mx-1 rem">A</a>
+        <a href="#" class="text-white mx-1 rem">A-</a>
+        <select name="lang" id="lang" class="ms-2 form-select form-select-sm">
+          <option>Select Language</option>
+          <option value="english">English</option>
+          <option value="hindi">Hindi</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="container-fluid py-2 bg-white text-black border-top border-bottom">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-md-start">
+          <img src="Images/emblem-dark.png" alt="State Emblem of India" height="70px" class="me-3">
+          <div>
+            <strong class="d-block text-center text-md-start">जिल्हा नागपूर</strong>
+            <h4 class="m-0 text-center text-md-start">District Nagpur</h4>
+          </div>
+        </div>
+
+        <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+          <button type="button" class="same" data-bs-toggle="modal" data-bs-target="#complaintModal">
+            Raise Complaint Online
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="complaintModal" tabindex="-1" aria-labelledby="complaintModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="complaintModalLabel">Raise a Complaint</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
               </div>
-            </div>
-      
-            <div class="col-md-3 col-sm-6 mb-4">
-              <div class="footer-info-single">
-                <h2 class="title text-uppercase">Quick Links</h2>
-                <ul class="list-unstyled">
-                  <li class="mb-2"><a href="index.html" class="text-light"><i class="fa fa-angle-double-right me-2"></i> Home</a></li>
-                  <li class="mb-2"><a href="about.html" class="text-light"><i class="fa fa-angle-double-right me-2"></i> About Us</a></li>
-                  <li class="mb-2"><a href="events.html" class="text-light"><i class="fa fa-angle-double-right me-2"></i> Events</a></li>
-                  <li><a href="contact.html" class="text-light"><i class="fa fa-angle-double-right me-2"></i> Contact</a></li>
-                </ul>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
               </div>
-            </div>
-      
-            <div class="col-md-3 col-sm-6 mb-4">
-              <div class="footer-info-single">
-                <h2 class="title text-uppercase">Security & Privacy</h2>
-                <ul class="list-unstyled">
-                  <li class="mb-2"><a href="#" class="text-light"><i class="fa fa-angle-double-right me-2"></i> Terms of Use</a></li>
-                  <li class="mb-2"><a href="#" class="text-light"><i class="fa fa-angle-double-right me-2"></i> Privacy Policy</a></li>
-                  <li class="mb-2"><a href="#" class="text-light"><i class="fa fa-angle-double-right me-2"></i> Return/Refund Policy</a></li>
-                  <li><a href="#" class="text-light"><i class="fa fa-angle-double-right me-2"></i> Govt. Tenders</a></li>
-                </ul>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
               </div>
+              <div class="mb-3">
+                <label for="complaint" class="form-label">Complaint Details</label>
+                <textarea class="form-control" id="complaint" rows="4" placeholder="Describe your issue"></textarea>
+              </div>
+              <button type="submit" class="same">Submit Complaint</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-md bg-dark text-white">
+      <div class="container">
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          ☰
+        </button>
+        <div class="collapse navbar-collapse justify-content-md-start" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link text-white px-3" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white px-3" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link text-white px-3" href="events.html">Events</a></li>
+            <li class="nav-item"><a class="nav-link text-white px-3" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="contact-section py-5 bg-light">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-lg-6 col-md-12">
+          <div class="contact-form p-4 shadow-lg bg-white rounded">
+            <h2 class="text-center fw-bold mb-3">📩 Get in Touch</h2>
+            <p class="text-center text-muted">We’d love to hear from you! Fill in the details below, and we’ll get back
+              to you shortly.</p>
+            <form>
+              <div class="mb-3 input-group">
+                <span class="input-group-text bg-primary text-white"><i class="bi bi-person-fill"></i></span>
+                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="mb-3 input-group">
+                <span class="input-group-text bg-primary text-white"><i class="bi bi-envelope-fill"></i></span>
+                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+              </div>
+              <div class="mb-3 input-group">
+                <span class="input-group-text bg-primary text-white"><i class="bi bi-pencil-fill"></i></span>
+                <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="mb-3 input-group">
+                <span class="input-group-text bg-primary text-white"><i class="bi bi-chat-dots-fill"></i></span>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100 fw-bold">Send Message 🚀</button>
+            </form>
+
+            <div class="text-center mt-4">
+              <p class="mb-2"><i class="bi bi-telephone-fill text-primary"></i> <strong>Phone:</strong> +91 98765 43210
+              </p>
+              <p class="mb-2"><i class="bi bi-envelope-fill text-primary"></i> <strong>Email:</strong>
+                info@rightserve.com</p>
+              <p class="mb-2"><i class="bi bi-geo-alt-fill text-primary"></i> <strong>Address:</strong> 10, Saurabh
+                Nagar-2, Besa Rd, near Hanuman Mandir, Saubhagya Nagar, Ghogali, Nagpur, Maharashtra 440034</p>
+              <p class="mb-2"><i class="bi bi-clock-fill text-primary"></i> <strong>Business Hours:</strong> Mon - Fri,
+                10 AM - 10 PM</p>
             </div>
-      
-            <div class="col-md-3 col-sm-6 mb-4">
-              <div class="footer-info-single">
-                <h2 class="title text-uppercase">Contact Us</h2>
-                <p>Email: <a href="mailto:hello@rsinfotechsys.com" class="text-light">rsinfotech@gmail.com</a></p>
-                <p>Helpline: <a href="tel:+91 7972192831" class="text-light">7972192831</a></p>
-                <div class="social-media mt-3">
-                  <ul class="list-inline">
-                    <li class="list-inline-item">
-                      <a href="https://www.facebook.com/RightServe" class="btn btn-outline-light btn-sm rounded-circle py-2"><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://www.instagram.com/right_serve_infotech_system/" class="btn btn-outline-light btn-sm rounded-circle py-2"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://www.linkedin.com/company/rsinfotechsys/posts/?feedView=all" class="btn btn-outline-light btn-sm rounded-circle py-2"><i class="fa-brands fa-linkedin-in fa-lg" style="color: #ffffff;"></i></i></a>
-                    </li>
-                  </ul>
+
+            <div class="text-center mt-3">
+              <a href="#" class="text-primary mx-2 fs-4"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-primary mx-2 fs-4"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="text-primary mx-2 fs-4"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-primary mx-2 fs-4"><i class="bi bi-linkedin"></i></a>
+              <a href="https://wa.me/919876543210" class="text-success mx-2 fs-4"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12">
+          <div class="contact-map shadow-lg rounded overflow-hidden mb-4">
+            <iframe class="w-100 rounded" height="300" style="border:0;" allowfullscreen loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.0210243982538!2d79.08988357430741!3d21.07182248630001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf5350dc545f%3A0xd55211e531f81f8a!2sRIGHT%20SERVE%20INFOTECH%20SYSTEM%20PRIVATE%20LIMITED!5e0!3m2!1sen!2sin!4v1741245974165!5m2!1sen!2sin">
+            </iframe>
+          </div>
+
+          <div class="faq-section p-4 shadow-lg bg-white rounded">
+            <h4 class="fw-bold text-primary">💡 Frequently Asked Questions</h4>
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#answer1">
+                    How can I contact support?
+                  </button>
+                </h2>
+                <div id="answer1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    You can contact us via email at <strong>support@rightserve.com</strong> or call us at +91 98765
+                    43210.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answer2">
+                    Where is your office located?
+                  </button>
+                </h2>
+                <div id="answer2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Our office is located at <strong>10, Saurabh Nagar-2, Besa Rd, near Hanuman Mandir, Saubhagya Nagar,
+                      Ghogali, Nagpur, Maharashtra 440034</strong>.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answer3">
+                    What are your working hours?
+                  </button>
+                </h2>
+                <div id="answer3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Our business hours are <strong>Monday to Saturday, 10 AM - 10 PM</strong>.
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-      
-          <hr class="border-light">
-      
-          <section class="copyright text-center">
-            <p class="mb-0">&copy; <a href="https://rsinfotechsys.com/" target="_blank"> RIGHT SERVE INFOTECH SYSTEMS PVT. LTD. 2025. All Rights Reserved.</a></p>
-          </section>
         </div>
-    </footer>
+      </div>
+    </div>
+
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+  </section>
+
+
+  <footer class="nb-footer bg-dark text-light py-5">
+    <div class="container">
+      <div class="row text-center text-md-start">
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="footer-info-single">
+            <h2 class="title text-uppercase">Government of India</h2>
+            <img src="Images/emblem-dark.png" class="img-fluid mb-2" alt="Government Logo" style="max-width: 80px;">
+            <p>Ensuring transparency, digital governance, and accessibility for every citizen.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="footer-info-single">
+            <h2 class="title text-uppercase">Quick Links</h2>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="index.html" class="text-light"><i class="fa fa-angle-double-right me-2"></i>
+                  Home</a></li>
+              <li class="mb-2"><a href="about.html" class="text-light"><i class="fa fa-angle-double-right me-2"></i>
+                  About Us</a></li>
+              <li class="mb-2"><a href="events.html" class="text-light"><i class="fa fa-angle-double-right me-2"></i>
+                  Events</a></li>
+              <li><a href="contact.html" class="text-light"><i class="fa fa-angle-double-right me-2"></i> Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="footer-info-single">
+            <h2 class="title text-uppercase">Security & Privacy</h2>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#" class="text-light"><i class="fa fa-angle-double-right me-2"></i> Terms of
+                  Use</a></li>
+              <li class="mb-2"><a href="#" class="text-light"><i class="fa fa-angle-double-right me-2"></i> Privacy
+                  Policy</a></li>
+              <li class="mb-2"><a href="#" class="text-light"><i class="fa fa-angle-double-right me-2"></i>
+                  Return/Refund Policy</a></li>
+              <li><a href="#" class="text-light"><i class="fa fa-angle-double-right me-2"></i> Govt. Tenders</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="footer-info-single">
+            <h2 class="title text-uppercase">Contact Us</h2>
+            <p>Email: <a href="mailto:hello@rsinfotechsys.com" class="text-light">rsinfotech@gmail.com</a></p>
+            <p>Helpline: <a href="tel:+91 7972192831" class="text-light">7972192831</a></p>
+            <div class="social-media mt-3">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/RightServe"
+                    class="btn btn-outline-light btn-sm rounded-circle py-2"><i class="fa-brands fa-facebook fa-xl"
+                      style="color: #ffffff;"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.instagram.com/right_serve_infotech_system/"
+                    class="btn btn-outline-light btn-sm rounded-circle py-2"><i class="fa-brands fa-instagram fa-lg"
+                      style="color: #ffffff;"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/company/rsinfotechsys/posts/?feedView=all"
+                    class="btn btn-outline-light btn-sm rounded-circle py-2"><i class="fa-brands fa-linkedin-in fa-lg"
+                      style="color: #ffffff;"></i></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-light">
+
+      <section class="copyright text-center">
+        <p class="mb-0">&copy; <a href="https://rsinfotechsys.com/" target="_blank"> RIGHT SERVE INFOTECH SYSTEMS PVT.
+            LTD. 2025. All Rights Reserved.</a></p>
+      </section>
+    </div>
+  </footer>
 </body>
+
 </html>
