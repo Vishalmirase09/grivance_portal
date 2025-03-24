@@ -93,20 +93,20 @@
                         <li class="nav-item"><a class="nav-link text-white px-3" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link text-white px-3" href="about.html">About</a></li>
                         <li class="nav-item"><a class="nav-link text-white px-3" href="events.html">Events</a></li>
-                        <li class="nav-item"><a class="nav-link text-white px-3" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-3" href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <section class="contact-section py-5">
+    <section class="contact-section py-5 bg-light">
       <div class="container">
           <div class="row g-4">
-              
+              <!-- Contact Form -->
               <div class="col-lg-6 col-md-12">
-                  <div class="contact-form p-4 shadow-lg rounded">
-                      <h2 class="text-center fw-bold mb-4">📩 Get in Touch</h2>
+                  <div class="contact-form p-4 shadow-lg bg-white rounded">
+                      <h2 class="text-center fw-bold mb-3">📩 Get in Touch</h2>
                       <p class="text-center text-muted">We’d love to hear from you! Fill in the details below, and we’ll get back to you shortly.</p>
                       <form>
                           <div class="mb-3 input-group">
@@ -118,24 +118,94 @@
                               <input type="email" class="form-control" id="email" placeholder="Your Email" required>
                           </div>
                           <div class="mb-3 input-group">
+                              <span class="input-group-text bg-primary text-white"><i class="bi bi-pencil-fill"></i></span>
+                              <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                          </div>
+                          <div class="mb-3 input-group">
                               <span class="input-group-text bg-primary text-white"><i class="bi bi-chat-dots-fill"></i></span>
                               <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
                           </div>
-                          <button type="submit" class="btn btn-primary w-100">Send Message 🚀</button>
+                          <button type="submit" class="btn btn-primary w-100 fw-bold">Send Message 🚀</button>
                       </form>
+  
+                      <!-- Contact Info -->
+                      <div class="text-center mt-4">
+                          <p class="mb-2"><i class="bi bi-telephone-fill text-primary"></i> <strong>Phone:</strong> +91 98765 43210</p>
+                          <p class="mb-2"><i class="bi bi-envelope-fill text-primary"></i> <strong>Email:</strong> info@rightserve.com</p>
+                          <p class="mb-2"><i class="bi bi-geo-alt-fill text-primary"></i> <strong>Address:</strong> 10, Saurabh Nagar-2, Besa Rd, near Hanuman Mandir, Saubhagya Nagar, Ghogali, Nagpur, Maharashtra 440034</p>
+                          <p class="mb-2"><i class="bi bi-clock-fill text-primary"></i> <strong>Business Hours:</strong> Mon - Fri, 10 AM - 10 PM</p>
+                      </div>
+  
+                      <!-- Social Media -->
+                      <div class="text-center mt-3">
+                          <a href="#" class="text-primary mx-2 fs-4"><i class="bi bi-facebook"></i></a>
+                          <a href="#" class="text-primary mx-2 fs-4"><i class="bi bi-twitter"></i></a>
+                          <a href="#" class="text-primary mx-2 fs-4"><i class="bi bi-instagram"></i></a>
+                          <a href="#" class="text-primary mx-2 fs-4"><i class="bi bi-linkedin"></i></a>
+                          <a href="https://wa.me/919876543210" class="text-success mx-2 fs-4"><i class="bi bi-whatsapp"></i></a>
+                      </div>
                   </div>
               </div>
   
+              <!-- Google Map & FAQ -->
               <div class="col-lg-6 col-md-12">
-                  <div class="contact-map shadow-lg rounded overflow-hidden">
-                      <iframe class="w-100" height="400" style="border:0;" allowfullscreen loading="lazy"
+                  <div class="contact-map shadow-lg rounded overflow-hidden mb-4">
+                      <iframe class="w-100 rounded" height="300" style="border:0;" allowfullscreen loading="lazy"
                           referrerpolicy="no-referrer-when-downgrade"
                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.0210243982538!2d79.08988357430741!3d21.07182248630001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf5350dc545f%3A0xd55211e531f81f8a!2sRIGHT%20SERVE%20INFOTECH%20SYSTEM%20PRIVATE%20LIMITED!5e0!3m2!1sen!2sin!4v1741245974165!5m2!1sen!2sin">
                       </iframe>
                   </div>
+  
+                  <!-- FAQ Section -->
+                  <div class="faq-section p-4 shadow-lg bg-white rounded">
+                      <h4 class="fw-bold text-primary">💡 Frequently Asked Questions</h4>
+                      <div class="accordion" id="faqAccordion">
+                          <div class="accordion-item">
+                              <h2 class="accordion-header" id="faq1">
+                                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#answer1">
+                                      How can I contact support?
+                                  </button>
+                              </h2>
+                              <div id="answer1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                  <div class="accordion-body">
+                                      You can contact us via email at <strong>support@rightserve.com</strong> or call us at +91 98765 43210.
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="accordion-item">
+                              <h2 class="accordion-header" id="faq2">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer2">
+                                      Where is your office located?
+                                  </button>
+                              </h2>
+                              <div id="answer2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                  <div class="accordion-body">
+                                      Our office is located at <strong>10, Saurabh Nagar-2, Besa Rd, near Hanuman Mandir, Saubhagya Nagar, Ghogali, Nagpur, Maharashtra 440034</strong>.
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="accordion-item">
+                              <h2 class="accordion-header" id="faq3">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer3">
+                                      What are your working hours?
+                                  </button>
+                              </h2>
+                              <div id="answer3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                  <div class="accordion-body">
+                                      Our business hours are <strong>Monday to Saturday, 10 AM - 10 PM</strong>.
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </div>
           </div>
       </div>
+  
+      <!-- WhatsApp Floating Button -->
+      <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">
+          <i class="bi bi-whatsapp"></i>
+      </a>
   </section>
   
 
